@@ -10,6 +10,13 @@ class Animecard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+
+      color: const Color.fromARGB(255, 104, 54, 197),
+      margin: const EdgeInsets.symmetric(
+        horizontal: 40,
+        vertical: 20
+      ),
+
       child: ListTile(
         leading: Image.network(
           imagem,
@@ -17,8 +24,13 @@ class Animecard extends StatelessWidget {
           height: 150,
           fit: BoxFit.cover,
         ),
-        title: Text(nome),
-        subtitle: Text("Nota: $nota"),
+      
+        title: Text(nome, style: const TextStyle(
+          color: Colors.white,
+        )),
+        subtitle: Text("Nota: $nota",style: TextStyle(
+          color: Colors.yellow
+        ),)
       ),
     );
   }
