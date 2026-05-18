@@ -9,7 +9,7 @@ class LogoApp extends StatelessWidget {
       "assets/logo.jpg",
       width: 320,
       height: 140,
-      fit: BoxFit.contain,
+      fit: BoxFit.contain
     );
   }
 }
